@@ -11,43 +11,71 @@
 
     <div>
         <!-- Section-1 -->
-        <div style="background-image: url('./images/desktop/image-hero.jpg');" class="py-12 px-32 h-auto w-auto text-white bg-center bg-cover bg-no-repeat">
+        <div style="background-image: url('./images/desktop/image-hero.jpg');" class=" header py-12  px-8 md:px-16 lg:px-32 h-auto w-full text-white bg-center bg-cover bg-no-repeat">
             <div class="flex flex-row justify-between">
                 <h1 class="text-4xl">loopstudios</h1>
-                <div >
+                <div class="hidden md:block">
                     <ul class="flex flex-row justify-around p-3">
-                        <li class="ml-8">
+                        <li class="ml-4 lg:ml-8 border-b-2 border-transparent hover:border-white">
                             <a href="#"> About </a>
                         </li>
-                        <li class="ml-8">
+                        <li class="ml-4 lg:ml-8 border-b-2 border-transparent hover:border-white">
                             <a href="#">Careers</a>
                         </li>
-                        <li class="ml-8">
+                        <li class="ml-4 lg:ml-8 border-b-2 border-transparent hover:border-white">
                             <a href="#"> Events </a>
                         </li>
-                        <li class="ml-8">
+                        <li class="ml-4 lg:ml-8 border-b-2 border-transparent hover:border-white">
                             <a href="#">Products</a>
                         </li>
-                        <li class="ml-8">
+                        <li class="ml-4 lg:ml-8 border-b-2 border-transparent hover:border-white">
                             <a href="#">Support</a>
                         </li>
                     </ul>
                 </div>
+
+                <button onclick="show__nav()" class="nav m-4 focus:outline-none md:hidden"><img src="./images/icon-hamburger.svg"/></button>
             </div>
-            <div class="my-20 mt-32 tracking-widest max-w-md p-5 pr-8 text-5xl font-light border-2 border-white">
+            <div class="my-20 mt-32 tracking-widest max-w-md p-5 pr-8 text-3xl md:text-5xl font-light border-2 border-white">
                 IMMERSIVE<br/>
                 EXPERIENCES<br/>
                 THAT DELIVER 
             </div>    
         </div>
+
+        <div class="hidden small_nav lg:hidden py-12 px-8 md:px-16 border-black border-2
+        bg-black text-white h-screen" >
+            <div class="flex flex-row justify-between">
+                <h1 class="text-4xl">loopstudios</h1>
+                <button " onclick="show__ham()" class="close m-4 focus:outline-none"><img src="./images/icon-close.svg"/></button>     
+            </div>
+            <ul class="text-2xl font-thin mt-32 h-screen">
+                <li class="mt-8">
+                    <a href="#" class="border-b-2 border-transparent hover:border-white"> ABOUT </a>
+                </li>
+                <li class="mt-8">
+                    <a href="#" class="border-b-2 border-transparent hover:border-white">CAREERS</a>
+                </li>
+                <li class="mt-8">
+                    <a href="#" class="border-b-2 border-transparent hover:border-white"> EVENTS </a>
+                </li>
+                <li class="mt-8">
+                    <a href="#" class="border-b-2 border-transparent hover:border-white">PRODUCTS</a>
+                </li>
+                <li class="mt-8">
+                    <a href="#" class="border-b-2 border-transparent hover:border-white">SUPPORT</a>
+                </li>
+            </ul> 
+        </div>
+
     </div>
     
     <!--Section-2 -->
-    <div class="font-light py-32 px-32 h-auto flex  flex-col xl:flex-row" >
+    <div class="font-light pt-16 md:pt-32 px-8 md:px-16 lg:px-32 h-auto flex  flex-col xl:flex-row" >
         <div style="background-image: url('./images/desktop/image-interactive.jpg');" class="h-auto w-full xl:w-6/12 py-48 bg-center bg-cover bg-no-repeat">
         </div>
         <div class="mt-12 text-center xl:text-left xl:mt-32 xl:-ml-32 bg-white xl:p-16 xl:pb-0 xl:w-2/4">
-            <h1 class="text-5xl tracking-wide">THE LEADER IN INTERACTIVE VR</h1>
+            <h1 class="text-3xl md:text-5xl tracking-wide">THE LEADER IN INTERACTIVE VR</h1>
             <p class="xl:tracking-wider text-lg mt-5">
                 Founded in 2011, Loopstudios has been producing world-class 
                 virtual reality projects for some of the best companies around the
@@ -58,68 +86,84 @@
     </div>
 
     <!-- Section-3 -->
-    <div class="pb-32 px-32 font-light  tracking-wide">
+    <div class="py-16 md:pb-32 px-8 md:px-16 lg:px-32 font-light  tracking-wide">
         <div class="">
-            <div class="flex flex-row justify-between">
-                <h2 class="mx-20 lg:mx-0 text-5xl">OUR CREATIONS</h2>
-                <button class="hidden lg:block w-32 border-black border-2 m-4 mr-8 tracking-widest">SEE ALL</button>
+            <div class="flex flex-row justify-center lg:justify-between r">
+                <h2 class="text-3xl md:text-5xl">OUR CREATIONS</h2>
+                <button class="hidden lg:block w-32 border-black border-2 m-4  tracking-widest">SEE ALL</button>
             </div>
             <div class="text-white flex flex-row flex-wrap text-3xl"  >
-                <div style="background-image: url('./images/desktop/image-deep-earth.jpg');" class="card h-64"><h4>DEEP EARTH</h4></div>
+                <div style="background-image: url('./images/desktop/image-deep-earth.jpg');" class="card"><h4>DEEP EARTH</h4></div>
                 <div style="background-image: url('./images/desktop/image-night-arcade.jpg');" class="card"><h4>NIGHT ARCADE</h4></div>
                 <div style="background-image: url('./images/desktop/image-soccer-team.jpg');" class="card"><h4>SOCCER TEAM VR</h4></div>
-                <div style="background-image: url('./images/desktop/image-grid.jpg');" class="card mr-0"><h4>THE GRID</h4></div>
+                <div style="background-image: url('./images/desktop/image-grid.jpg');" class="card"><h4>THE GRID</h4></div>
                 <div style="background-image: url('./images/desktop/image-from-above.jpg');" class="card"><h4>FROM ABOVE VR</h4></div>
                 <div style="background-image: url('./images/desktop/image-pocket-borealis.jpg');" class="card"><h4>POCKET BOREALIS</h4></div>
                 <div style="background-image: url('./images/desktop/image-curiosity.jpg');" class="card"><h4>THE CURIOSITY</h4></div>
-                <div style="background-image: url('./images/desktop/image-fisheye.jpg');" class="card mr-0"><h4>MAKE IT FISHEYE</h4></div>
+                <div style="background-image: url('./images/desktop/image-fisheye.jpg');" class="card"><h4>MAKE IT FISHEYE</h4></div>
             </div>
         </div>
     </div>
     
     <!-- Section-4 -->
-    <div class="flex flex-row justify-between py-8 px-32 h-auto w-auto text-white bg-black">
+    <div class="flex flex-col text-center lg:flex-row lg:text-left justify-between py-8 px-8 md:px-16 lg:px-32 h-auto w-auto text-white bg-black">
         <div class="flex flex-col">
-            <h2 class="text-lg font-semibold">loopstudios</h2>
+            <h2 class="text-2xl font-semibold">loopstudios</h2>
             <div class="mt-5">
-                <ul class="flex flex-row">
-                    <li class="mr-8">
-                        <a href="#"> About </a>
+                <ul class="flex flex-col lg:flex-row">
+                    <li class="mt-4 lg:mt-0 mr-8 ">
+                        <a href="#" class="border-b-2 border-transparent hover:border-white"> About </a>
                     </li>
-                    <li class="mr-8">
-                        <a href="#">Careers</a>
+                    <li class="mt-4 lg:mt-0 mr-8 ">
+                        <a href="#" class="border-b-2 border-transparent hover:border-white">Careers</a>
                     </li>
-                    <li class="mr-8">
-                        <a href="#"> Events </a>
+                    <li class="mt-4 lg:mt-0 mr-8 ">
+                        <a href="#" class="border-b-2 border-transparent hover:border-white"> Events </a>
                     </li>
-                    <li class="mr-8">
-                        <a href="#">Products</a>
+                    <li class="mt-4 lg:mt-0 mr-8 ">
+                        <a href="#" class="border-b-2 border-transparent hover:border-white">Products</a>
                     </li>
-                    <li class="mr-8">
-                        <a href="#">Support</a>
+                    <li class="mt-4 lg:mt-0 mr-8 ">
+                        <a href="#" class="border-b-2 border-transparent hover:border-white">Support</a>
                     </li>   
                 </ul>
             </div>
         </div>
         <div>
             <div class="flex flex-col " >
-                <ul class="flex flex-row justify-end">
-                    <li class="mr-4">
-                        <a href="#"><img src="./images/icon-facebook.svg" alt="fb"/></a>
+                <ul class="flex flex-row justify-center mt-12 lg:mt-4 lg:justify-end">
+                    <li class="mr-4 border-b-2 border-transparent hover:border-white">
+                        <a href="#"><img src="./images/icon-facebook.svg"  class="mb-2" alt="fb"/></a>
                     </li>
-                    <li class="mr-4">
-                        <a href="#"><img src="./images/icon-twitter.svg" alt="twi"/></a>
+                    <li class="mr-4 border-b-2 border-transparent hover:border-white">
+                        <a href="#"><img src="./images/icon-twitter.svg" class="mb-2" alt="twi"/></a>
                     </li>
-                    <li class="mr-4">
-                        <a href="#"> <img src="./images/icon-pinterest.svg" alt="pin"/></a>
+                    <li class="mr-4 border-b-2 border-transparent hover:border-white ">
+                        <a href="#"> <img src="./images/icon-pinterest.svg" class="mb-2" alt="pin"/></a>
                     </li>
-                    <li class="mr-4">
-                        <a href="#"><img src="./images/icon-instagram.svg" alt="ins"/></a>
+                    <li class="mr-4 border-b-2 border-transparent hover:border-white">
+                        <a href="#"><img src="./images/icon-instagram.svg" class="mb-2" alt="ins"/></a>
                     </li>
                 </ul>   
             </div>
             <h4 class="text-sm mt-5 text-gray-400">&copy 2021 Loopstudios. All rights reserved.</h4>
         </div>
+
+        <script>
+            function show__nav()
+            {
+                document.getElementsByClassName('small_nav')[0].style.display='block';
+                document.getElementsByClassName('header')[0].style.display='none';
+                document.getElementsByClassName('nav')[0].style.display='none';
+                document.getElementsByClassName('small_nav')[0].classList.add("slide__effect");
+            }
+    
+            function show__ham(){
+                document.getElementsByClassName('nav')[0].style.display='block';
+                document.getElementsByClassName('small_nav')[0].style.display='none';
+                document.getElementsByClassName('header')[0].style.display='block';
+            }
+        </script>
 
     </div>
 </body>

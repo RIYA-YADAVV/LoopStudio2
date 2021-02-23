@@ -4,21 +4,11 @@
 
 @tailwind utilities;
 
-.card{
-    width:17rem;
-    margin-right:2.2rem;
-    margin-top:2rem;
-    height:27rem;
-    background-repeat:no-repeat;
-    background-size: cover;
-    flex-grow:1;
-    flex-shrint:1; 
-}
 
 
-.card h4{
-    margin-top:17rem;
-    padding:3rem; 
+.s__h{
+    width:auto;
+    height:20rem
 }
 
 .card:hover{
@@ -61,5 +51,41 @@
 		-webkit-transform: translateY(-10px);
 		transform: translateY(-10px);
     }
+}
+
+@media screen and (min-width:300px)
+{
+    .card{
+    width:100%;
+    margin-right:0rem;
+    margin-top:2.7rem;
+    height:15rem; 
+    background-repeat:no-repeat;
+    background-size: cover;
+    }
+
+    .card h4{
+    margin-top:6rem;
+    padding:3rem; 
+}
+}
+
+@media screen and (min-width:850px)
+{
+    .card{
+    width:17rem;
+    margin-right:2.7rem;
+    margin-top:2.7rem;
+    height:27rem;
+    background-repeat:no-repeat;
+    background-size: cover;
+    flex-grow:1;
+    flex-shrint:1; 
+}
+
+.card h4{
+    margin-top:17rem;
+    padding:3rem; 
+}
 }
 
